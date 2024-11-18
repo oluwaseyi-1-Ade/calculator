@@ -4,12 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <title>Calculator</title>
 </head>
 
 <body>
+
+    <div id="calculator" class="border border-black h-[500px] w-[300px] mx-auto rounded-2xl my-[10vh] relative">
+        <div class="screen h-[100px] p-4 pb-0 mt-[30px]">
+            <input id="cal-input" type="text" dire class="w-full h-[50px] mt-[33px] outline-none bg-[#f3f4f6] px-2">
+        </div>
+        <div id="buttons" class="grid grid-cols-4 w-full gap-[16px] p-4 mt-[22px] mx-auto select-none">
+            <button class="bg-[blue] text-white h-[50px] rounded-lg w-[50px]">C</button>
+            <button class="bg-[#f97316] text-white h-[50px] rounded-lg w-[50px] p-3">
+                <img src="./assets//svg/square-root.svg" alt="square-root">
+            </button>
+            <button class="bg-[#f97316] text-white h-[50px] rounded-lg w-[50px]">+</button>
+            <button class="bg-[#ff0000] text-white h-[50px] rounded-lg w-[50px] p-3">
+                <img src="./assets//svg/delete.svg" alt="delete">
+            </button>
+            <button id="num" value="1" class="bg-black text-white h-[50px] rounded-lg w-[50px]">1</button>
+            <button id="num" value="2" class="bg-black text-white h-[50px] rounded-lg w-[50px]">2</button>
+            <button id="num" value="3" class="bg-black text-white h-[50px] rounded-lg w-[50px]">3</button>
+            <button class="bg-[#f97316] text-white h-[50px] rounded-lg w-[50px]">*</button>
+            <button id="num" value="4" class="bg-black text-white h-[50px] rounded-lg w-[50px]">4</button>
+            <button id="num" value="5" class="bg-black text-white h-[50px] rounded-lg w-[50px]">5</button>
+            <button id="num" value="6" class="bg-black text-white h-[50px] rounded-lg w-[50px]">6</button>
+            <button class="bg-[#f97316] text-white h-[50px] rounded-lg w-[50px]">/</button>
+            <button id="num" value="7" class="bg-black text-white h-[50px] rounded-lg w-[50px]">7</button>
+            <button id="num" value="8" class="bg-black text-white h-[50px] rounded-lg w-[50px]">8</button>
+            <button id="num" value="9" class="bg-black text-white h-[50px] rounded-lg w-[50px]">9</button>
+            <button class="bg-[#f97316] text-white h-[50px] rounded-lg w-[50px]">-</button>
+            <button class="bg-[#f97316] text-white h-[50px] rounded-lg w-[50px]">%</button>
+            <button id="num" value="0" class="bg-black text-white h-[50px] rounded-lg w-[50px]">0</button>
+            <button id="num" value="." class="bg-black text-white h-[50px] rounded-lg w-[50px]">.</button>
+            <button class="bg-[#f97316] text-white h-[50px] rounded-lg w-[50px]">=</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
